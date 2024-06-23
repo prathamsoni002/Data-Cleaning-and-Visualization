@@ -30,14 +30,20 @@ CSV file with more than 130k records that includes the Organization Name, Town/C
     Thus, by creating API request call we can get the corresponding SIC codes.
 
     Various Options were considered to for this process, including
-  _ *Apache Airflow*, *Apache Nifi*_ etc, to create a stable data pipline that creates batched of data and process them.
+  _*Apache Airflow*, *Apache Nifi*_ etc, to create a stable data pipline that creates batched of data and process them.
 
    But, Using basic _*Python request library*_ the process has been done, because of the simplicity and one time nature of the requirement.
 
    Manual filtering out the SIC codes that matches the tech - releated industry and then every SIC fetched for all the records havebeen cross checked. When the SIC if matches, a the Orginazation is termed to a Tech based company.
 
+#DataCleaning:
+Google Colab link: https://colab.research.google.com/drive/1BOs-9jeP69sgAUeq4s4jqDsLAHa6DpWO?usp=sharing
+
 
 **Visualization**
+
+#DataVisualization:
+Google colab link: https://colab.research.google.com/drive/1ovvQpo3Kk1ugsKsSwRq5qaBp6Ux_Jddj?usp=sharing
 
 *Using Kibana and Elasticsearch*
   Pie chart representation of companies present in Various UK Cities
