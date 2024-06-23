@@ -30,9 +30,9 @@ CSV file with more than 130k records that includes the Organization Name, Town/C
     Thus, by creating API request call we can get the corresponding SIC codes.
 
     Various Options were considered to for this process, including
-   *Apache Airflow*, *Apache Nifi* etc, to create a stable data pipline that creates batched of data and process them.
+  _ *Apache Airflow*, *Apache Nifi*_ etc, to create a stable data pipline that creates batched of data and process them.
 
-   But, Using basic *Python request library* the process has been done, because of the simplicity and one time nature of the requirement.
+   But, Using basic _*Python request library*_ the process has been done, because of the simplicity and one time nature of the requirement.
 
    Manual filtering out the SIC codes that matches the tech - releated industry and then every SIC fetched for all the records havebeen cross checked. When the SIC if matches, a the Orginazation is termed to a Tech based company.
 
@@ -49,6 +49,7 @@ CSV file with more than 130k records that includes the Organization Name, Town/C
 ![image](https://github.com/prathamsoni002/Data-Cleaning-and-Visualization/assets/114599961/0e6c37cf-37e5-4aa5-8a68-00b3669de7c1)
 
 
-*Future Scope*
+*Future Scope*:
+
 Fetch the company address or use the Town/City to generate latitude and longitude for visualization using geo maps in Kibana.
  
