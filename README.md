@@ -4,7 +4,7 @@
 
 **Project Aim:** 
 
-To extract data available in CSV format from the official UK government website that lists all registered companies till 2023-2024 that provide various types of employability visas, and filter out the tech-based companies providing 'Skilled Worker Visas'.
+To extract data available in CSV format from the official UK government website that lists all registered companies till 2023-2024 that provide various types of employability visas, and filter out the tech-based companies providing 'Skilled Worker Visa'.
 
 **Data Format:** 
 
@@ -14,7 +14,7 @@ CSV file with more than 130k records that includes the Organization Name, Town/C
 
 1. Organization names were not properly formatted. Issues included commas (,), extra spaces, non-alphanumeric characters (e.g., *, -, /), and entries with both original and newly registered company names in the same record. These issues likely arose from various forms filled during registration, leading to many typos.
 2. Similar typos in Town/City columns.
-3. Does not Specify the industry of the Orginazations, thus it was impossible to find out wich company can porvide Tech based jobs or not.
+3. Does not Specify the industry of the Orginazations, thus it was difficult to find out wich company can porvide Tech based jobs or not.
 4. Simple list of companies, no feature of segration of the companies. 
 
 **Solution and Approaches** 
@@ -34,7 +34,7 @@ CSV file with more than 130k records that includes the Organization Name, Town/C
 
    But, Using basic _*Python request library*_ the process has been done, because of the simplicity and one time nature of the requirement.
 
-   Manual filtering out the SIC codes that matches the tech - releated industry and then every SIC fetched for all the records havebeen cross checked. When the SIC if matches, a the Orginazation is termed to a Tech based company.
+   Manual filtering out the SIC codes that matches the tech - releated industry and then running a script on every SIC fetched for all the records have been cross checked. When the SIC if matches, the Orginazation is termed to a Tech based company.
 
 #DataCleaning:
 Google Colab link: https://colab.research.google.com/drive/1BOs-9jeP69sgAUeq4s4jqDsLAHa6DpWO?usp=sharing
@@ -50,7 +50,7 @@ Google colab link: https://colab.research.google.com/drive/1ovvQpo3Kk1ugsKsSwRq5
    ![image](https://github.com/prathamsoni002/Data-Cleaning-and-Visualization/assets/114599961/313fc9ef-54a3-46c3-a5ca-c30ec592dcc1)
 
 
-*Using Python to list out the companies based on the selected Town/City and the TechProbab score(calculated based on the closeness of selected SIC codes to be a Tech Relevant)*
+*Using Python to list out the companies based on the selected Town/City and the Section or TechProbab score(calculated based on the closeness of selected SIC codes to be a Tech Relevant)*
 
 ![image](https://github.com/prathamsoni002/Data-Cleaning-and-Visualization/assets/114599961/0e6c37cf-37e5-4aa5-8a68-00b3669de7c1)
 
@@ -58,4 +58,11 @@ Google colab link: https://colab.research.google.com/drive/1ovvQpo3Kk1ugsKsSwRq5
 *Future Scope*:
 
 Fetch the company address or use the Town/City to generate latitude and longitude for visualization using geo maps in Kibana.
- 
+
+Rank the company based on their Performance. To find out the best company for work. 
+
+
+ **Outcome:**
+
+ 1. Easy filtering out the companies that are Tech based or provide Tech relevant jobs.
+ 2. Making it much easier to find out which company is liable to provide Skilled Worker Visa. 
